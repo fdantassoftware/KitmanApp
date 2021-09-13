@@ -1,0 +1,22 @@
+PODS:
+  - Kingfisher (6.1.0)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
+
+DEPENDENCIES:
+  - Kingfisher
+  - NVActivityIndicatorView/Extended
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Kingfisher: f5d8d60a0ef3edd642fd781bae60918599901aff
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+
+PODFILE CHECKSUM: fda574a30afa0067bb253a9c8eb13175aa183b3e
+
+COCOAPODS: 1.11.1
