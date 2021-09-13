@@ -1,0 +1,5 @@
+- The idea of the architecture is to move all the logic to do with networking and json parsing
+away from the controllers.
+
+- The viewModel is responsible to fetch whatever data is necessary and send it back to UI using delegates.
+

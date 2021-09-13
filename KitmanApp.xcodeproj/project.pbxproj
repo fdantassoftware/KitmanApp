@@ -34,6 +34,7 @@
 		9A8CAF3626EF856D00D00853 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CAF3526EF856D00D00853 /* Login.swift */; };
 		9A8CAF3C26EF8B2400D00853 /* AthletesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CAF3B26EF8B2400D00853 /* AthletesViewController.swift */; };
 		9A8CAF4026EF9EA600D00853 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CAF3F26EF9EA600D00853 /* UIViewController+Extension.swift */; };
+		9AD7BE3426EFE75500D07A24 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9AD7BE3326EFE75500D07A24 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		9A8CAF3526EF856D00D00853 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9A8CAF3B26EF8B2400D00853 /* AthletesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesViewController.swift; sourceTree = "<group>"; };
 		9A8CAF3F26EF9EA600D00853 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9AD7BE3326EFE75500D07A24 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		ACDFFDD9EDC2C07D1E1531D0 /* Pods-KitmanApp-KitmanAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitmanApp-KitmanAppUITests.release.xcconfig"; path = "Target Support Files/Pods-KitmanApp-KitmanAppUITests/Pods-KitmanApp-KitmanAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B700530BAC20F0C20CF919FC /* Pods_KitmanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitmanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 		9A8CAEE326EF757400D00853 /* KitmanApp */ = {
 			isa = PBXGroup;
 			children = (
+				9AD7BE3326EFE75500D07A24 /* README */,
 				9A8CAF1426EF757E00D00853 /* AppDelegate */,
 				9A8CAF1526EF758E00D00853 /* Resources */,
 				9A8CAF2D26EF839F00D00853 /* Services */,
@@ -468,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD7BE3426EFE75500D07A24 /* README in Resources */,
 				9A8CAEF126EF757400D00853 /* LaunchScreen.storyboard in Resources */,
 				9A8CAF1D26EF762200D00853 /* Welcome.storyboard in Resources */,
 				9A8CAEEE26EF757400D00853 /* Assets.xcassets in Resources */,
