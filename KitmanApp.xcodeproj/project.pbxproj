@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F9B6EC1177C6204380F67C8 /* Pods_KitmanAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7451AC28904C69C4102F0836 /* Pods_KitmanAppTests.framework */; };
 		47B4032B10C13CBCF3C4FBFD /* Pods_KitmanApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B700530BAC20F0C20CF919FC /* Pods_KitmanApp.framework */; };
 		712AF91E9455A1FE2ECCE45E /* Pods_KitmanApp_KitmanAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734C1B654A1181F9C79F40B3 /* Pods_KitmanApp_KitmanAppUITests.framework */; };
+		9A46C72326EFACF000B07A36 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46C72226EFACF000B07A36 /* Athlete.swift */; };
+		9A46C72526EFADD000B07A36 /* AthleteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46C72426EFADD000B07A36 /* AthleteViewModel.swift */; };
+		9A46C72726EFB28900B07A36 /* AthleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46C72626EFB28900B07A36 /* AthleteCell.swift */; };
+		9A46C72B26EFCFE900B07A36 /* Squad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46C72A26EFCFE900B07A36 /* Squad.swift */; };
 		9A8CAEE526EF757400D00853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CAEE426EF757400D00853 /* AppDelegate.swift */; };
 		9A8CAEE726EF757400D00853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CAEE626EF757400D00853 /* SceneDelegate.swift */; };
 		9A8CAEEC26EF757400D00853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8CAEEA26EF757400D00853 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		734C1B654A1181F9C79F40B3 /* Pods_KitmanApp_KitmanAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitmanApp_KitmanAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7451AC28904C69C4102F0836 /* Pods_KitmanAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitmanAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F7A06D4B745693480E0968 /* Pods-KitmanAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitmanAppTests.release.xcconfig"; path = "Target Support Files/Pods-KitmanAppTests/Pods-KitmanAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A46C72226EFACF000B07A36 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		9A46C72426EFADD000B07A36 /* AthleteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteViewModel.swift; sourceTree = "<group>"; };
+		9A46C72626EFB28900B07A36 /* AthleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteCell.swift; sourceTree = "<group>"; };
+		9A46C72A26EFCFE900B07A36 /* Squad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squad.swift; sourceTree = "<group>"; };
 		9A8CAEE126EF757400D00853 /* KitmanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitmanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8CAEE426EF757400D00853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A8CAEE626EF757400D00853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +133,6 @@
 				38B511F1EDE0C3CFB640B8FF /* Pods-KitmanAppTests.debug.xcconfig */,
 				81F7A06D4B745693480E0968 /* Pods-KitmanAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,11 +171,11 @@
 		9A8CAEE326EF757400D00853 /* KitmanApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A8CAF1426EF757E00D00853 /* AppDelegate */,
+				9A8CAF1526EF758E00D00853 /* Resources */,
 				9A8CAF2D26EF839F00D00853 /* Services */,
 				9A8CAF2526EF784300D00853 /* Extensions */,
 				9A8CAF2026EF773D00D00853 /* Designables */,
-				9A8CAF1426EF757E00D00853 /* AppDelegate */,
-				9A8CAF1526EF758E00D00853 /* Resources */,
 				9A8CAF1726EF75D800D00853 /* Welcome */,
 				9A8CAF1626EF75BC00D00853 /* Main */,
 			);
@@ -227,11 +234,11 @@
 		9A8CAF1726EF75D800D00853 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				9A8CAF1826EF75F200D00853 /* Storyboards */,
 				9A8CAF2A26EF80B200D00853 /* ViewModels */,
 				9A8CAF1B26EF760C00D00853 /* Models */,
 				9A8CAF1A26EF760600D00853 /* Views */,
 				9A8CAF1926EF760000D00853 /* Controllers */,
-				9A8CAF1826EF75F200D00853 /* Storyboards */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 		9A8CAF3826EF8AF800D00853 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A46C72626EFB28900B07A36 /* AthleteCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +338,8 @@
 		9A8CAF3926EF8AFE00D00853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9A46C72226EFACF000B07A36 /* Athlete.swift */,
+				9A46C72A26EFCFE900B07A36 /* Squad.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +347,7 @@
 		9A8CAF3A26EF8B0300D00853 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9A46C72426EFADD000B07A36 /* AthleteViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -592,7 +603,10 @@
 				9A8CAF2426EF781B00D00853 /* KGradientView.swift in Sources */,
 				9A8CAF3626EF856D00D00853 /* Login.swift in Sources */,
 				9A8CAF1F26EF763F00D00853 /* LoginViewController.swift in Sources */,
+				9A46C72526EFADD000B07A36 /* AthleteViewModel.swift in Sources */,
+				9A46C72B26EFCFE900B07A36 /* Squad.swift in Sources */,
 				9A8CAF4026EF9EA600D00853 /* UIViewController+Extension.swift in Sources */,
+				9A46C72726EFB28900B07A36 /* AthleteCell.swift in Sources */,
 				9A8CAF3226EF844300D00853 /* NetworkManager.swift in Sources */,
 				9A8CAF3026EF83BF00D00853 /* JsonParser.swift in Sources */,
 				9A8CAEE526EF757400D00853 /* AppDelegate.swift in Sources */,
@@ -601,6 +615,7 @@
 				9A8CAF2226EF775800D00853 /* KButton.swift in Sources */,
 				9A8CAF2926EF798A00D00853 /* KTextField.swift in Sources */,
 				9A8CAF3426EF84AD00D00853 /* API.swift in Sources */,
+				9A46C72326EFACF000B07A36 /* Athlete.swift in Sources */,
 				9A8CAF2C26EF80C900D00853 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

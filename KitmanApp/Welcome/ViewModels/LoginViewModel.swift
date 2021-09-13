@@ -46,8 +46,9 @@ class LoginViewModel: NSObject {
             case .failure(let error):
                 print("JSON Parsing failed: \(error)")
                 self?.delegate?.onLoginFailed()
-            case .success(let result):
-                self?.delegate?.onLoginSuccess(username: result.username)
+            case .success(let login):
+                UserDefaults.standard.setValue(true, forKey: "isUserLogged")
+                self?.delegate?.onLoginSuccess(username: login.username)
             }
         }
     }

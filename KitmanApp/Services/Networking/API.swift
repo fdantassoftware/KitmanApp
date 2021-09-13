@@ -19,6 +19,10 @@ struct API {
         return "\(BASE_URL)/athletes"
     }
     
+    var getSquads: String {
+        return "\(BASE_URL)/squads"
+    }
+    
     var login: String {
         return "\(BASE_URL)/session"
     }

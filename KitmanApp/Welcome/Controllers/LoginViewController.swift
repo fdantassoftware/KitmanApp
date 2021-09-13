@@ -13,8 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameField: KTextField!
     @IBOutlet var passwordField: KTextField!
     
+    // Private Members
     private let nextControllerId = "AthletesViewController"
-    
     private var loginViewModel = LoginViewModel()
     
     override func viewDidLoad() {
